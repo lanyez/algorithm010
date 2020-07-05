@@ -23,7 +23,7 @@ public void depthFirstSearch(TreeNode treeNode){
 }
 ```
 
-#####深度优先搜索（递归）
+###深度优先搜索（递归）
 ```java
 public void depthFirstSearch(TreeNode treeNode){
     if(treeNode == null){
@@ -36,7 +36,7 @@ public void depthFirstSearch(TreeNode treeNode){
 }
 ```
 
-#####广度优先搜索（非递归）
+###广度优先搜索（非递归）
 ```java
 public void broadFirstSearch(TreeNode treeNode){
     if(treeNode == null){
