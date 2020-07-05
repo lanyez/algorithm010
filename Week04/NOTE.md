@@ -2,7 +2,7 @@
 
 深度优先搜索和广度优先搜索 每个节点都要访问一次，且每个节点仅访问一次； 对于节点的访问顺序不限：深度优先（DFS）和广度优先（BFS）
 
-#####深度优先搜索(非递归)
+###深度优先搜索(非递归)
 ```java
 public void depthFirstSearch(TreeNode treeNode){
     if(treeNode == null){
