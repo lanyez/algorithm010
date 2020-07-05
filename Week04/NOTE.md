@@ -60,8 +60,23 @@ public void broadFirstSearch(TreeNode treeNode){
 
 ###二分查找
 
-目标函数单调性（单调递增或单调递减）
-存在上下界（bounded）
-能够通过索引访问（index accessible）
-二分查找是指在有序的情况下进行查找，必须采用顺序存储结构，必须按关键字大小有序排列。如果是无序的话就没法进行二分查找。
+1、目标函数单调性（单调递增或单调递减）  
+2、存在上下界（bounded）  
+3、能够通过索引访问（index accessible）  
+
+```java
+int left = 0,right = 0, len = array.length - 1;
+while( left <= right){
+    mid = left + (right - left) /2;
+    if(array[mid] == target){
+        return result;
+    }else if(array[mid] < target){
+        left = mid + 1;
+    }else {
+        right = mid - 1;
+    }
+}
+return result;
+```
+
 
